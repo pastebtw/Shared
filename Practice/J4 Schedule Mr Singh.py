@@ -8,8 +8,8 @@ listc = []
 for i in range(tasks):
     priority, duration, name = input().split()
     name = list(name)
-    name.remove('"')
-    name.remove('"')
+    name.remove(name[0])
+    name.remove(name[-1])
     name = ''.join(name)
     lista.append(int(priority))
     listb.append(int(duration))
