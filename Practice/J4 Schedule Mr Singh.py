@@ -26,7 +26,7 @@ time = hours + minutes
 
 
 print(final)
-if hours < 13:
+if time < 1000:
     print('0' + str(hours) + str(minutes))
 else:
     print(hours + minutes)
