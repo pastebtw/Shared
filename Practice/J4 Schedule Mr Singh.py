@@ -18,11 +18,10 @@ for i in range(tasks):
 important = lista.index(max(lista))
 final = listc[important]
 
-minutes = sum(listb) * 3 % 60
-hours = (sum(listb) * 3/ 60)
-hours = math.floor(hours)
-minutes = int(minutes)
-time = hours + minutes
+summ = sum(listb) * 3
+minutes = summ % 60 # filters out minutes
+hours = summ / 60 % 24 + (math.floor(summ / 60)) #3045 / 60 = hours, divide out the extra hours > 24
+days = summ / 60 / 24 + (math.floor(summ / 24))  #remainder of hours
 
 
 print(final)
