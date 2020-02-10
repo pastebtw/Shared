@@ -20,12 +20,12 @@ final = listc[important]
 
 summ = sum(listb) * 3
 minutes = summ % 60 # filters out minutes
-hours = summ / 60 % 24 + (math.floor(summ / 60)) #3045 / 60 = hours, divide out the extra hours > 24
+hours = summ / 60 % 24 + (math.floor(summ / 60)) #math.floor rounds a number down to nearest whole number
 days = summ / 60 / 24 + (math.floor(summ / 24))  #remainder of hours
 
 
 print(final)
-if time < 1000:
+if hours < 10:      # if hours < 10 then you print a 0.
     print('0' + str(hours) + str(minutes))
 else:
     print(hours + minutes)
