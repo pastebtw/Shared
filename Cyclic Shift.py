@@ -1,16 +1,33 @@
 
 
+#burger
+#012345
+
+
 string = input()
 substring = input()
+sub = list(substring)
 new = []
+mhm = False
 
 for i in range(len(substring)):
     key = 1
-    x = substring[(substring.index(substring[i]) + key) % len(substring)]   #sample input : abcde, a takes the place of the
-    new.append(x)                                                           #item in the next index, since key is 1
-                                                                            #divides by len(substring) to have last value to be first index
-for i in new:
-    print(i)
+    x = sub[(sub.index(sub[i]) + key) % len(sub)]
+    new.append(x)
+    for e in range(len(string) - len(substring) + 1):
+        if string[e:e+len(substring)] == substring:
+            mhm = True
+            break
+        else:
+            continue
+
+
+print(mhm)
+print(substring)       # this and the print statements under were used for testing purposes
+print(new)
+print(len(substring))
+
+
 
 
 
