@@ -4,30 +4,32 @@
 #012345
 
 
-string = input()
-substring = input()
+
+string = "123abcde12"
+substring = "bcdea"
 sub = list(substring)
-new = []
-mhm = False
+contains = False
+shift = 1
 
-for i in range(len(substring)):
-    key = 1
-    x = sub[(sub.index(sub[i]) + key) % len(sub)]
-    new.append(x)
-    for e in range(len(string) - len(substring) + 1):
-        if string[e:e+len(substring)] == substring:
-            mhm = True
-            break
-        else:
-            continue
+for f in range(len(substring)):
+    new = []
+    for i in range(len(substring)):
+        x = sub[(sub.index(sub[i]) + shift) % len(sub)]
+        new.append(x)
+        for e in range(len(string) - len(substring) + 1):
+            newS = "".join(new)
+            if string[e:e+len(substring)] == newS:
+                contains = True
+                break
+            elif string[e:e+len(substring)] == substring:
+                contains = True
+                break
+            else:
+                continue
+    shift += 1
 
 
-print(mhm)
-print(substring)       # this and the print statements under were used for testing purposes
-print(new)
-print(len(substring))
-
-
+print(contains)
 
 
 
