@@ -2,7 +2,7 @@ package contest;
 
 import java.io.*;
 
-public class Main {
+public class J5 {
 	public static boolean end = true;
 	public static void main(String[] args) throws IOException{
 		// TODO Auto-generated method stub
