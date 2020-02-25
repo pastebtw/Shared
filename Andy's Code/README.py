@@ -1,3 +1,5 @@
+// Andy is gay
+
 import time
 
 time = time.asctime()
