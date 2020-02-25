@@ -1,4 +1,4 @@
-# andy is gay
+# Orion is gay
 
 import time
 
