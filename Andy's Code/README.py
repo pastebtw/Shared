@@ -1,4 +1,4 @@
-// Andy is gay
+# andy is gay
 
 import time
 
