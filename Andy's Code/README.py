@@ -1,4 +1,4 @@
-# Orion is gay
+# Orion is no
 
 import time
 
