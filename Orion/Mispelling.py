@@ -18,4 +18,16 @@ for e in new:
 
 # CONTEST
 # 0123456
-# index = 7, 7-1 = 6
+# index = 7, 7-1 = 6 nigga.
+
+# given a number of test cases, remove the nth letter of an inputted string
+# and return them in order by numbering them (1, 2, 3)
+
+# sample input:
+'''
+4
+4 MISSPELL
+1 PROGRAMMING
+7 CONTEST
+3 BALLOON
+'''
