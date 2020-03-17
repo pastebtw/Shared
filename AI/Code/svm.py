@@ -25,3 +25,7 @@ def bench_k_means(estimator, name, data):
 
 clf = KMeans(n_clusters = k ,init="random", n_init=10)
 bench_k_means(clf, "1", data )
+
+#svm classification Ai 
+#uses clusters to clasify 
+# 
