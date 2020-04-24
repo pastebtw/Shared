@@ -1,3 +1,6 @@
+# NOTE
+# ONLY WORKS FOR NUMBERS UNDER 10,000,000,000
+
 uniques = {
     "0": "",
     "1": 'one',
